@@ -90,3 +90,34 @@ color: rgba(255, 255, 255, 1);
     justify-content: center;
     
 }
+
+
+
+
+@media (min-width: 471px) and (max-width:768px) {
+    .header {
+        background-image: linear-gradient(to bottom,
+        rgba(26, 26, 31, 0.5) 20%,
+        rgba(0, 0, 0, 0.56)90%),url(../images/header2.jpg);
+    }
+}
+
+@media (max-width: 470px) {
+    .header__container {
+        padding: 40px 50px 30px 50px;
+    }
+
+    .header {
+        background-image: linear-gradient(to bottom,
+        rgba(26, 26, 31, 0.5) 20%,
+        rgba(0, 0, 0, 0.56)90%),url(../images/header3.jpg);
+    }
+
+    .header__page-name {
+        display: none;
+    }
+
+    .header__searcher {
+        width: 280px;
+    }
+}
