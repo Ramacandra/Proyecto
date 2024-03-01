@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Library</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="header__container-library">
         <div>
           <svg class="header__icon" width="24" height="24">
             <use href="./images/svg/symbol-defs.svg#icon-film"></use>
@@ -22,27 +22,37 @@
         <nav>
           <ul class="header__list">
             <li>
-              <a href="#" class="header__items active"> Home</a>
+              <a href="/home.html" class="header__items"> Home</a>
             </li>
             <li>
-              <a href="#" class="header__items"> My library</a>
+              <a href="/library.html" class="header__items active">
+                My library</a
+              >
             </li>
           </ul>
         </nav>
       </div>
-      <span class="input__container">
-        <input
-          class="header__searcher"
-          type="text"
-          name="searcher"
-          placeholder="Buscar películas"
-        />
-        <a href="#">
-          <svg class="input__icon" width="12" height="12">
-            <use href="./images/svg/symbol-defs.svg#icon-search-2"></use>
-          </svg>
-        </a>
-      </span>
+
+      <ul class="library-header__buttons-list">
+        <li class="header__user-item">
+          <button
+            name="watched"
+            class="library-header__button watched"
+            type="button"
+          >
+            Watched
+          </button>
+        </li>
+        <li class="header__user-item">
+          <button
+            name="queue"
+            class="library-header__button queue"
+            type="button"
+          >
+            Queue
+          </button>
+        </li>
+      </ul>
     </header>
   </body>
 </html>
