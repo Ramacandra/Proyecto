@@ -14,6 +14,7 @@
 padding: 40px 70px 30px 70px;
 display: flex;
 justify-content: space-between;
+align-items: center;
 }
 
 .header__page-name {
@@ -71,12 +72,11 @@ text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     outline:  none;
     cursor: pointer;
-}
 
-.header__searcher::placeholder {
+&::placeholder {
 color: rgba(255, 255, 255, 1); 
 }
-
+}
 
 .input__icon {
     stroke: rgba(255, 255, 255, 1);
@@ -124,54 +124,3 @@ color: rgba(255, 255, 255, 1);
         width: 280px;
     }
 }
-
-
- /*Library*/
- .header__library {
-    background-color: black;
-    background-image: linear-gradient(to bottom,
-    rgba(26, 26, 31, 0.5) 20%,
-    rgba(0, 0, 0, 0.56)90%),url(../images/library-header.png);
-    background-size: cover; 
-    background-position: center bottom;
-    font-family: "Roboto", sans-serif; 
-    height: 230px;
-}
-
- .header__container-library  {
-        padding: 40px 70px 10px 70px;
-        display: flex;
-        justify-content: space-between;
-        }
- 
-
-.library-header__button {
-    text-transform: uppercase;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 1);
-    background: transparent;
-    border-radius: 5px;
-    border-color:  rgba(255, 255, 255, 1);
-    cursor: pointer; 
-    height: 44px; ;
-    width: 136px;
-}
-  
-    .library-header__button:hover {
-      border: none;
-      background-color: rgba(255, 107, 1, 1);
-    }
-
-    .library-header__button:focus {
-        background-color: rgba(255, 107, 1, 1) ;
-        border: none;
-      }
-
-    .library-header__buttons-list {
-        display: flex;
-        justify-content: center;
-        list-style: none;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-    

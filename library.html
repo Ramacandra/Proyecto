@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header__library">
@@ -35,18 +35,14 @@
 
       <ul class="library-header__buttons-list">
         <li class="header__user-item">
-          <button
-            name="watched"
-            class="library-header__button watched"
-            type="button"
-          >
+          <button name="watched" class="library-header__button" type="button">
             Watched
           </button>
         </li>
         <li class="header__user-item">
           <button
             name="queue"
-            class="library-header__button queue"
+            class="library-header__button library-header__button--active"
             type="button"
           >
             Queue
@@ -54,5 +50,6 @@
         </li>
       </ul>
     </header>
+    
   </body>
 </html>
